@@ -41,7 +41,7 @@ export const searchUsersFetch = async (
     const e = error as Error;
 
     dispatch(searchUsersFailed(e.message));
-    console.log(e.message);
+    // console.log(e.message);
   }
 };
 
@@ -70,6 +70,6 @@ export const fetchUser = async (username: string, dispatch: AppDispatch) => {
     const e = error as Error;
 
     dispatch(getUserFailed(e.message));
-    console.log(e.message);
+    // console.log(e.message);
   }
 };

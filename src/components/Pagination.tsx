@@ -10,7 +10,6 @@ const Pagination = () => {
 
   const nextPage = () => {
     if (!params) return;
-    console.log(params);
     searchUsersFetch({ ...params, page: params.page + 1 }, dispatch);
   };
   const prevPage = () => {
