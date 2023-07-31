@@ -25,14 +25,14 @@ describe("userDisclosure", () => {
 
     render(<UserDisclosure user={user1} />, { store });
 
-    const usersDisclosure = screen.getByRole("githubUserDisclosure");
+    const userDisclosure = screen.getByRole("githubUserDisclosure");
     const button = screen.getByRole("button");
 
-    expect(usersDisclosure).toHaveTextContent(user1.login);
+    expect(userDisclosure).toHaveTextContent(user1.login);
 
     fireEvent.click(button);
 
-    expect(usersDisclosure).toHaveTextContent(user1.name);
-    expect(usersDisclosure).toHaveTextContent(user1.bio);
+    expect(userDisclosure).toHaveTextContent(user1.name);
+    expect(userDisclosure).toHaveTextContent(user1.bio);
   });
 });
